@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SVG Renderer</title>
+</head>
+<body>
+    <h1>Rendered SVG Image</h1>
+    <div class="svg-container">
+        <%= $svg_content %>
+    </div>
+</body>
+</html>
