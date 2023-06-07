@@ -9,7 +9,7 @@ sub display_message {
     my $message = $self->param('message');
 
     # Render the message without proper HTML escaping
-    $self->render(text => "Message: $message");
+    $self->render(template => 'xss',message => $message);
 }
 
 1;
