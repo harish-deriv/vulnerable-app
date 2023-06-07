@@ -46,7 +46,7 @@ sub render_svg {
     my ($self, $svg_content) = @_;
 
     # Render the SVG file in a template
-    $self->render(template => 'xxe/render_svg', svg_content => $svg_content);
+    $self->render(template => 'render_svg', svg_content => $svg_content);
 }
 
 1;
