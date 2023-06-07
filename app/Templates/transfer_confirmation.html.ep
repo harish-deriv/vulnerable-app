@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transfer Confirmation</title>
+</head>
+<body>
+    <h1>Transfer Confirmation</h1>
+    <p>Transfer of <%= $amount %> to <%= $recipient %> has been initiated.</p>
+    <p>Please confirm the transfer.</p>
+    <!-- CSRF protection is missing in this template -->
+    <form action="/csrf/confirm_transfer" method="POST">
+        <input type="hidden" name="recipient" value="<%= $recipient %>">
+        <input type="hidden" name="amount" value="<%= $amount %>">
+        <button type="submit">Confirm Transfer</button>
+    </form>
+</body>
+</html>
