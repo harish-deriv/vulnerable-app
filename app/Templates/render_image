@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Render</title>
+</head>
+<body>
+    <% if (stash('file_path')) { %>
+        <h1>File Content</h1>
+        <pre><%= b(file(stash('file_path'))->slurp) %></pre>
+    <% } else { %>
+        <h1>No file specified</h1>
+    <% } %>
+</body>
+</html>
